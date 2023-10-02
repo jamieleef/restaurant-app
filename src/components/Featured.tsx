@@ -1,5 +1,6 @@
 import { featuredProducts } from "@/data";
 import Image from "next/image";
+import React from "react";
 
 const Featured = () => {
     return (
@@ -18,13 +19,13 @@ const Featured = () => {
                                 <Image
                                     src={item.img}
                                     alt=""
-                                    fill
+                                    layout="fill"
                                     className="object-contain"
                                 />
                             </div>
                         )}
                         {/* TEXT CONTAINER */}
-                        <div className="flex-1 flex flex-col items-center justify-center text-center gap-4">
+                        <div className=" flex-1 flex flex-col items-center justify-center text-center gap-4">
                             <h1 className="text-xl font-bold uppercase xl:text-2xl 2xl:text-3xl">
                                 {item.title}
                             </h1>
